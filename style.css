@@ -1,0 +1,9 @@
+#header-resume {
+    opacity:0.8;
+    background-position: center;
+    background-image: url(Images/background-image.png);
+    background-size: cover;
+    height: 400px;
+    padding-top: 14px;
+
+}

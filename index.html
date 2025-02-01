@@ -1,18 +1,100 @@
 <html>
-    <head>
-     <title>Home</title>
-     
-     
-    </head>
-    <body>
-        <header>
-            <h1>Hello</h1>
-        </header>
-        <main>
-            <p>Hello</p>
-        </main>
-        <footer>
-            <h2></h2>
-        </footer>
-    </body>
+<head>
+    <style>
+        body {
+            background-color: powderblue;
+            text-align: center; /* Centers all text and elements inside the body */
+        }
+        h1 {
+            display: inline-block; /* Makes the buttons behave like inline elements */
+            margin: 10px; /* Adds space around each button */
+        }
+        h2 {
+            font-size: 30px; /* Increase the size of the 'Who would you like to vote for?' text */
+            font-weight: bold;
+        }
+        h3 {
+            font-size: 36px; /* Larger font for the 'Our Candidates' heading */
+            margin-top: 30px;
+        }
+        p {
+            font-size: 18px; /* Style for the instructions paragraph */
+        }
+    </style>
+</head>
+<body>
+    <h3>Our Candidates</h3> <!-- New Heading: Our Candidates -->
+	    <script type="text/javascript">
+        var candidate = new Array(5);
+        candidate[1] = "Amy:<br><br> Hello my name is Amy and I am 12 years old, my passion is reading and math, <br> and I believe I can make a huge difference in the community. I am planning to  <br>add huge  swimming pool along with expanding our library and adding new books.<br>";
+        candidate[2] = "Jack: <br> <br> Hello, I am Jack, and my hobbie are Basketball and Science. <br> I will make sure to improve our basketball cort and add new <br>basketballs.  I will also creat more no uniform days. <br> ";
+        candidate[3] = "Bob: <br> <br> Hello, I am Bob, and my hobbie are Football and Music. <br> I will try and fix all the holes in the football pitch and get new <br> footballs.  I will also creat more bake sales . <br> ";
+        candidate[4] = "Emma: <br> <br> Hello, I am Emma, and my hobbie are Math and Music. <br> I will make to get our school brand new music equiment and esspecially <br> new drums. I will also add new whitboards in the classrooms. <br> ";
+        
+
+        document.write("First Candidate: " + candidate[1] + "<br>");
+        document.write("Second Candidate: " + candidate[2] + "<br>");
+        document.write("Third Candidate: " + candidate[3] + "<br>");
+        document.write("Fourth Candidate: " + candidate[4] + "<br>");
+    </script>
+    <script type="text/javascript">
+        var candidate = new Array(5);
+        candidate[1] = "Amy";
+        candidate[2] = "Jack";
+        candidate[3] = "Bob";
+        candidate[4] = "Emma";
+
+        var votes = new Array(5); // Array to hold vote counts for each candidate
+        votes[1] = 0;
+        votes[2] = 0;
+        votes[3] = 0;
+        votes[4] = 0;
+    </script>
+
+    <h2>Who would you like to vote for?</h2> <!-- Enlarged text for the voting question -->
+    
+    <!-- Instructions paragraph -->
+    <p>Click on the button next to your chosen candidate to cast your vote. You will be thanked for voting, and the total votes for each candidate will be updated automatically.</p>
+
+    <h1><button id="b1">1- Candidate-Amy</button></h1>
+    <h1><button id="b2">2- Candidate-Jack</button></h1>
+    <h1><button id="b3">3- Candidate-Bob</button></h1>
+    <h1><button id="b4">4- Candidate-Emma</button></h1>
+
+    <!-- Display total votes for each candidate -->
+    <h3>Total Votes:</h3>
+    <p id="votesAmy">Amy: 0</p>
+    <p id="votesJack">Jack: 0</p>
+    <p id="votesBob">Bob: 0</p>
+    <p id="votesEmma">Emma: 0</p>
+
+    <script type="text/javascript">
+        // Update votes and display thank you message
+        function updateVotes(candidateId) {
+            votes[candidateId]++;
+            alert("Thank you for voting!");
+            
+            // Update the vote display on the page
+            document.getElementById("votesAmy").innerHTML = "Amy: " + votes[1];
+            document.getElementById("votesJack").innerHTML = "Jack: " + votes[2];
+            document.getElementById("votesBob").innerHTML = "Bob: " + votes[3];
+            document.getElementById("votesEmma").innerHTML = "Emma: " + votes[4];
+        }
+
+        document.getElementById("b1").onclick = function() {
+            updateVotes(1);
+        }
+        document.getElementById("b2").onclick = function() {
+            updateVotes(2);
+        }
+        document.getElementById("b3").onclick = function() {
+            updateVotes(3);
+        }
+        document.getElementById("b4").onclick = function() {
+            updateVotes(4);
+        }
+    </script>
+</body>
 </html>
+
+

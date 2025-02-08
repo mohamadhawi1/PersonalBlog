@@ -20,14 +20,3 @@
     text-decoration: none;
     color: rgb(0, 0, 0);
 }
-
-.nav-menu li a{
-    transition: color 0.5s, border-bottom 4s; 
-
-}
-
-.nav-menu li a:hover{
-    color:lightseagreen !important ; 
-    font-weight: bolder;
-    border-bottom: 1px solid black;
-}

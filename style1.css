@@ -1,7 +1,7 @@
 #header-resume {
     opacity:0.8;
     background-position: center;
-    background-image: url(Images/background-image.png);
+    background-image: url(Images/education.png);
     background-size: cover;
     height: 400px;
     padding-top: 14px;
@@ -9,7 +9,8 @@
 }
 
 #header-resume #header-nav ul{
-    word-spacing: 20px;
+    word-spacing: 10px;
+    
 }
 
 #header-nav li{
@@ -19,4 +20,5 @@
 #header-nav li a{
     text-decoration: none;
     color: rgb(0, 0, 0);
+    
 }

@@ -8,6 +8,36 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <style>
+        /* Style for the popup tooltips */
+        .popup {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            z-index: 10;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 200px;
+        }
+
+        /* Display the popup when hovering over the link */
+        .skill-name:hover .popup {
+            display: block;
+        }
+
+        /* Styling for the navigation links and containers */
+        .nav-menu-1 li {
+            list-style-type: none;
+        }
+
+        .nav-menu-1 a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+    </style>
 </head>
 
 <body>
@@ -20,40 +50,181 @@
                 <li><a href="#favourites">Favourites</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
-
             </ul>
-
         </nav>
         <div id="name-container">
             <div id="my-name" class="text-center">
                 <h2>Mohamad Hawi</h2>
             </div>
         </div>
-
     </header>
     <main>
         <section id="about-section">
             <div id="my-photo" class="text-center">
-                <img src="Images/kid.png"  alt="my-photo">
+                <img src="Images/Me.jpg" alt="my-photo">
             </div>
             <div id="about-profile" class="text-center">
-                <p>
-                Homework, Write about myself !!! 300 words
+                <p> My name is Mohamad Hawi, and I am 14 year old. One of my faviorite sports is basketball and I really enjoy coding.
+                    I am form Lebanon however, I live in Qatar. My faviortite colour is blue. I go to Doha British School, and one of my 
+                    faviortite subjects is math.
                 </p>
             </div>
         </section>
         <section id="skills">
             <div class="section-heading text-center">
-                <span>
-                    <i class="fas fa-chalkboard-teacher"></i>
-                </span>
+                <span><i class="fas fa-chalkboard-teacher"></i></span>
+                <span><h1>SKILLS:</h1></span>
+            </div>
+            <div class="skills-display row">
+                <div class="skill-progress col-3">  
+                    <div class="fifty-percent blue skill-box">
+                        <div class="skill-name">
+                            <span>
+                                <a href="#basketball">Basketball</a>
+                            </span>
+                            <!-- Popup for Basketball -->
+                            <div class="popup">I love playing basketball, especially shooting hoops and team sports!</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-progress col-3">
+                    <div class="fifty-percent blue skill-box">
+                        <div class="skill-name">
+                            <span>
+                                <a href="#coding">Coding</a>
+                            </span>
+                            <!-- Popup for Coding -->
+                            <div class="popup">I enjoy coding and solving problems through programming languages like JavaScript and Python.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-progress col-3">
+                    <div class="fifty-percent blue skill-box">
+                        <div class="skill-name">
+                            <span>
+                                <a href="#math">Math
+                                    
+
+
+                                </a>
+                            </span>
+                            <!-- Popup for Math -->
+                            <div class="popup">Math is a passion of mine. I enjoy working on complex problems and formulas.</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
+        <section id="favourites">
+            <div class="section-heading text-center">
+                <span>
+                    <i class="fas fa-th-list">
+
+                    </i>
+                </span>
+                <span>
+                    My faviortite: 
+                </span>
+            </div>
+            <div class="row text-center">
+                <div class="col-2">
+                    <h3>
+                        My Favourites Sport: 
+                    </h3>
+                    <h4>
+                        1- Basketball
+                        2- Swimming
+                        3- Vollyball
+                    </h4>
+                    <p>
+                        write about my fav sport
+                    </p>
+                </div>
+                <div class="col-2">
+                    <img src="Images/basketball.jpeg" alt="Basketball Image">
+                </div>
+            </div>
+
+            <div class="row text-center">
+                <div class="col-2">
+                    <h3>
+                        My Favourites Book: 
+                    </h3>
+                    <h4>
+                        1- Basketball
+                        2- Swimming
+                        3- Vollyball
+                    </h4>
+                    <p>
+                        write about my fav sport
+                    </p>
+                </div>
+                <div class="col-2">
+                    <img src="Images/basketball.jpeg" alt="Basketball Image">
+                </div>
+            </div>
+        </section>
+        
+        <section id="education">
+            <div class="section-heading text-center">
+                <img src="Images/education.png" alt="Education Image">
+                <h3>School Name: </h3>
+                <p>Write about school</p>
+                <p>--------------</p>
+                <p>--------------</p>       
+            </div>
+        </section>
+        <section id="portfolio">
+            <div class="section-heading text-center">
+                <span>
+                    <i class="fas fa-th-list"></i>
+                </span>
+                <span>
+                    Portfolio
+                </span>
+            </div> 
+            <div class="portfolio-display row">
+                <div class="portfolio-img col-3">
+                    <img src="Images/portfolio1.png" alt="Portfolio-1">
+                    <div class="portfolio-text">
+                        <p>Image 1</p>
+                    </div>
+                </div>
+                <div class="portfolio-img col-3">
+                    <img src="Images/portfolio2.png" alt="Portfolio-1">
+                    <div class="portfolio-text">
+                        <p>Image 2</p>
+                    </div>
+                </div>                <div class="portfolio-img col-3">
+                    <img src="Images/portfolio3.png" alt="Portfolio-1">
+                    <div class="portfolio-text">
+                        <p>Image 3</p>
+                    </div>
+                </div>                <div class="portfolio-img col-3">
+                    <img src="Images/portfolio4.png" alt="Portfolio-1">
+                    <div class="portfolio-text">
+                        <p>Image 4</p>
+                    </div>
+                </div>                <div class="portfolio-img col-3">
+                    <img src="Images/portfolio5.png" alt="Portfolio-1">
+                    <div class="portfolio-text">
+                        <p>Image 5</p>
+                    </div>
+                </div>                <div class="portfolio-img col-3">
+                    <img src="Images/portfolio6.png" alt="Portfolio-1">
+                    <div class="portfolio-text">
+                        <p>Image 6</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <div class="spacer"></div>
     </main>
-
-
-
-
 </body>
 
 </html>
